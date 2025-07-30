@@ -13,7 +13,6 @@ function App() {
       <Process />
       <SectionBreak />
       <Contact />
-      <Contact />
     </>
   )
 }

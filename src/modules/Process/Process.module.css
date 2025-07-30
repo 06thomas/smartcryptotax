@@ -8,11 +8,10 @@
 }
 
 .process-container-hide-trace {
-    height: 110vh;
     width: 40px;
     margin: 0 10px;
     position: absolute;
-    top: 100vh;
+    top: 0;
     background-color: #fefaf9;
     z-index: 0;
 }
@@ -38,7 +37,7 @@
 .active {
     visibility: visible !important;
     position: fixed !important;
-    top: -330px;
+    top: -50vh;
 }
 
 .elapsed {
@@ -53,7 +52,9 @@
 
 .process-container-infos div {
     height: 500px;
+    max-width: 375px;
     margin-top: 20px;
+    padding-right: 10px;
 }
 
 .process-container-infos div h3 {

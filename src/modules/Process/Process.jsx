@@ -3,21 +3,27 @@ import React, { useEffect } from 'react';
 
 function Process() {
     var elapsed = false;
+    var loadedHider = false;
 
     useEffect(() => {
         const handleScroll = () => {
-            var el = document.querySelector("." + styles["process-container-media-scroll"] + " div:nth-child(1)");
             var sectionProcess = document.querySelector("." + styles["process"]);
+            var el = document.querySelector("." + styles["process-container-media-scroll"] + " div:nth-child(1)");
 
-            if (window.scrollY >= (sectionProcess.getBoundingClientRect().top + window.scrollY) - 300) {
+            if(!loadedHider) {
+                document.querySelector("." + styles["process-container-hide-trace"]).style.height = sectionProcess.getBoundingClientRect().top + window.scrollY + "px";
+                loadedHider = true;
+            }
+
+            if (window.scrollY >= (sectionProcess.getBoundingClientRect().top + window.scrollY/2)) {
                 if(!elapsed) el.classList.add(styles["active"]);
-                
-                if ((sectionProcess.offsetHeight + sectionProcess.getBoundingClientRect().top) <= 350) {
+
+                if (window.scrollY >= (sectionProcess.getBoundingClientRect().bottom + window.scrollY) - screen.height/2) {
                     if(!elapsed) {
                         el.classList.add(styles["elapsed"]);
 
                         el.classList.remove(styles["active"]);
-                        el.style.height = (window.scrollY + 336) - (sectionProcess.getBoundingClientRect().top + window.scrollY) + "px";
+                        el.style.height = sectionProcess.offsetHeight + "px";
                         elapsed = true;
                     }
                 } else {

@@ -16,14 +16,23 @@
     border-radius: 10px;
 }
 
-.contact-container-form div {
-    padding: 20px;
+.contact-container-form-title {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
 }
 
-.contact-container-form div h3 {
+.contact-container-form-title h3 {
+    width: 200px;
     font-size: 20pt;
     font-weight: 500;
     color: #2b2e35;
+    justify-self: end;
+    margin: auto;
+}
+
+.contact-container-form div {
+    padding: 20px;
 }
 
 .contact-container-form div p:nth-child(2) {

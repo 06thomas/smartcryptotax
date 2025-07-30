@@ -6,7 +6,10 @@ function Contact() {
             <div className={styles["contact-container"]}>
                 <div className={styles["contact-container-form"]}>
                     <div>
-                        <h3>Krypto Daten Vorbereiten</h3>
+                        <div class={styles["contact-container-form-title"]}>
+                            <img src="https://placehold.co/100x100" />
+                            <h3>Krypto Daten Vorbereiten</h3>
+                        </div>
 
                         <p>Preis auf Anfrage</p>
                         <p>Die Kosten werden durch die Komplexität und den Umfang der Aufgabe bestimmt.</p>

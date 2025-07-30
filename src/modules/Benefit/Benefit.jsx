@@ -20,7 +20,7 @@ function Benefit() {
                                     </svg>
                                 </span>
 
-                                <span> Steuerersparnis durch korrekt aufbereitete Daten</span>
+                                <span>Steuerersparnis durch korrekt aufbereitete Daten</span>
                             </li>
 
                             <li>
@@ -30,7 +30,7 @@ function Benefit() {
                                     </svg>
                                 </span>
 
-                                <span> 100% kompatibel mit CoinTracking</span>
+                                <span>100% kompatibel mit CoinTracking</span>
                             </li>
                         </ul>
                     </div>

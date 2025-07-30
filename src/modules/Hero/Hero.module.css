@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: 660px;
     width: 100%;
     background: linear-gradient(#fff 0%, #df9739 100%);
     display: flex;
@@ -10,7 +10,6 @@
 .hero-container {
     text-align: center;
     padding: 10px;
-    margin-top: 120px;
 }
 
 .hero-container-title {

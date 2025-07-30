@@ -1,5 +1,5 @@
 .process {
-    height: 1560px;
+    height: 1630px;
     width: 100%;
 }
 
@@ -50,15 +50,23 @@
     margin-top: 0px;
 }
 
+.process-container-infos div:nth-child(1) {
+    margin-top: 0 !important;
+}
+
 .process-container-infos div {
-    height: 500px;
+    height: 530px;
     max-width: 375px;
     margin-top: 20px;
     padding-right: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 1px rgb(224, 224, 224);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .process-container-infos div h3 {
-    font-size: 24pt;
+    font-size: 22pt;
     font-style: italic;
     padding: 10px 0;
 }

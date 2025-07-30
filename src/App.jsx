@@ -3,6 +3,7 @@ import Benefit from "./modules/Benefit/Benefit.jsx"
 import Process from "./modules/Process/Process.jsx"
 import SectionBreak from "./modules/SectionBreak/SectionBreak.jsx"
 import Contact from "./modules/Contact/Contact.jsx"
+import Reviews from "./modules/Reviews/Reviews.jsx"
 import React, { useEffect, useRef, useState } from 'react';
 
 function App() {
@@ -25,11 +26,13 @@ function App() {
   return (
     <>
       <Hero />
+      <SectionBreak margin="0 0 30px 0" width="100%" />
       <Benefit />
       <SectionBreak />
       <Process />
       <SectionBreak />
       <Contact />
+      <Reviews />
     </>
   )
 }

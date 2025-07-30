@@ -1,5 +1,5 @@
 .contact {
-    height: 660px;
+    height: 710px;
     width: 100%;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .contact-container-form {
-    height: 650px;
+    height: 710px;
     width: 90vw;
     background-color: #fff;
     box-shadow: 0 0 6px 1px rgb(224, 224, 224);
@@ -23,12 +23,10 @@
 }
 
 .contact-container-form-title h3 {
-    width: 200px;
     font-size: 20pt;
     font-weight: 500;
     color: #2b2e35;
-    justify-self: end;
-    margin: auto;
+    padding: 12px 15px;
 }
 
 .contact-container-form div {

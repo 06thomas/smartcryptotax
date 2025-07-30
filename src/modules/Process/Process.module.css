@@ -1,5 +1,5 @@
 .process {
-    height: 230vh;
+    height: 1560px;
     width: 100%;
 }
 
@@ -13,7 +13,7 @@
     margin: 0 10px;
     position: absolute;
     top: 100vh;
-    background-color: #fff;
+    background-color: #fefaf9;
     z-index: 0;
 }
 
@@ -28,23 +28,22 @@
 .process-container-media-scroll div {
     position: static;
     visibility: hidden;
-    height: 400px;
-    width: 3px;
+    height: 100vh;
+    width: 2px;
     background-color: #397CDF;
     z-index: -1;
+    left: 29px;
 }
 
 .active {
     visibility: visible !important;
     position: fixed !important;
-    top: 0px;
-    left: 28.5px;
+    top: -330px;
 }
 
 .elapsed {
     visibility: visible !important;
     position: absolute !important;
-    height: 1500px !important;
 }
 
 .process-container-infos {

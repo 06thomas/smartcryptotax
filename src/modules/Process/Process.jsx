@@ -2,20 +2,32 @@ import styles from "./Process.module.css"
 import React, { useEffect } from 'react';
 
 function Process() {
+    var elapsed = false;
+
     useEffect(() => {
         const handleScroll = () => {
             var el = document.querySelector("." + styles["process-container-media-scroll"] + " div:nth-child(1)");
+            var sectionProcess = document.querySelector("." + styles["process"]);
 
-            if (window.scrollY >= 900) {
-                el.classList.add(styles["active"]);
-
+            if (window.scrollY >= (sectionProcess.getBoundingClientRect().top + window.scrollY) - 300) {
+                if(!elapsed) el.classList.add(styles["active"]);
                 
-                if (window.scrollY >= 2497) {
-                    el.classList.remove(styles["active"]);
-                    el.classList.add(styles["elapsed"]);
+                if ((sectionProcess.offsetHeight + sectionProcess.getBoundingClientRect().top) <= 350) {
+                    if(!elapsed) {
+                        el.classList.add(styles["elapsed"]);
+
+                        el.classList.remove(styles["active"]);
+                        el.style.height = (window.scrollY + 336) - (sectionProcess.getBoundingClientRect().top + window.scrollY) + "px";
+                        elapsed = true;
+                    }
                 } else {
-                    el.classList.add(styles["active"]);
-                    el.classList.remove(styles["elapsed"]);
+                    if(elapsed) {
+                        el.classList.add(styles["active"]);
+
+                        el.classList.remove(styles["elapsed"]);
+                        el.style.height = "";
+                        elapsed = false;
+                    }
                 }
             } else {
                 el.classList.remove(styles["active"]);

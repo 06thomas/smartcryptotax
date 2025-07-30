@@ -1,0 +1,79 @@
+.process {
+    height: 230vh;
+    width: 100%;
+}
+
+.process-container {
+    display: flex;
+}
+
+.process-container-hide-trace {
+    height: 110vh;
+    width: 40px;
+    margin: 0 10px;
+    position: absolute;
+    top: 100vh;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.process-container-media-scroll {
+    height: 100%;
+    width: 40px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.process-container-media-scroll div {
+    position: static;
+    visibility: hidden;
+    height: 400px;
+    width: 3px;
+    background-color: #397CDF;
+    z-index: -1;
+}
+
+.active {
+    visibility: visible !important;
+    position: fixed !important;
+    top: 0px;
+    left: 28.5px;
+}
+
+.elapsed {
+    visibility: visible !important;
+    position: absolute !important;
+    height: 1500px !important;
+}
+
+.process-container-infos {
+    width: 80%;
+    margin-top: 0px;
+}
+
+.process-container-infos div {
+    height: 500px;
+    margin-top: 20px;
+}
+
+.process-container-infos div h3 {
+    font-size: 24pt;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.process-container-infos div ul {
+    list-style: none;
+}
+
+.process-container-infos div ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.process-container-infos div p {
+    padding: 10px 0;
+}

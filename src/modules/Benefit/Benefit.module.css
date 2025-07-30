@@ -1,0 +1,39 @@
+.benefit {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-container-title {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 18pt;
+}
+
+.benefit-container-title h1 {
+    font-weight: 500;
+}
+
+.benefit-container-bulletpoints h3 {
+    padding: 20px 10px;
+    color: #df9739;
+    font-weight: 500;
+}
+
+.benefit-container-bulletpoints ul {
+    list-style: none;
+}
+
+.benefit-container-bulletpoints ul li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-container-bulletpoints ul li span:nth-child(1) {
+    padding: 10px;
+}

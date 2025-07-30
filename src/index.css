@@ -1,0 +1,21 @@
+:root {
+    --vh: 1vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: "Inter";
+    background-color: #fefaf9;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/Inter-VariableFont.ttf");
+}

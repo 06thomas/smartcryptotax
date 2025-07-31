@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const TrustItem = ({ file, label, classLabel }) => (
     <div className={"item" + classLabel}>
-        <img src={`/trustelements/${file}.svg`} width={24} height={24} />
+        <img src={`/smartcryptotax/trustelements/${file}.svg`} width={24} height={24} />
         <p>{label}</p>
     </div>
 );

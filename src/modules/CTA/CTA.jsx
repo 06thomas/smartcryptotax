@@ -1,12 +1,12 @@
-import styles from "./Contact.module.css"
+import styles from "./CTA.module.css"
 
-function Contact() {
+function CTA() {
     return(
-        <section className={styles["contact"]}>
-            <div className={styles["contact-container"]}>
-                <div className={styles["contact-container-form"]}>
+        <section className={styles["cta"]}>
+            <div className={styles["cta-container"]}>
+                <div className={styles["cta-container-form"]}>
                     <div>
-                        <div className={styles["contact-container-form-title"]}>
+                        <div className={styles["cta-container-form-title"]}>
                             <img src="https://placehold.co/100x100" />
                             <h3>Krypto Daten Vorbereiten</h3>
                         </div>
@@ -81,4 +81,4 @@ function Contact() {
     );
 }
 
-export default Contact
+export default CTA

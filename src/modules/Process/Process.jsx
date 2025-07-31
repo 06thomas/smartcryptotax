@@ -17,8 +17,8 @@ function Process() {
 
             if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= -screen.height/2) {
                 if(!elapsed.current) el.classList.add(styles["active"]);
-
-                if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= sectionProcess.offsetHeight - screen.height/2) {
+                
+                if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= sectionProcess.offsetHeight -screen.height/2) {
                     if(!elapsed.current) {
                         el.classList.add(styles["elapsed"]);
 

@@ -2,9 +2,11 @@ import Hero from "./modules/Hero/Hero.jsx"
 import Benefit from "./modules/Benefit/Benefit.jsx"
 import Process from "./modules/Process/Process.jsx"
 import SectionBreak from "./modules/SectionBreak/SectionBreak.jsx"
-import Contact from "./modules/Contact/Contact.jsx"
+import CTA from "./modules/CTA/CTA.jsx"
 import TrustElements from "./modules/TrustElements/TrustElements.jsx"
 import Reviews from "./modules/Reviews/Reviews.jsx"
+import FAQ from "./modules/FAQ/FAQ.jsx"
+import Footer from "./modules/Footer/Footer.jsx"
 import React, { useEffect, useRef, useState } from 'react';
 
 function App() {
@@ -32,9 +34,11 @@ function App() {
       <SectionBreak />
       <Process />
       <SectionBreak />
-      <Contact />
+      <CTA />
       <TrustElements />
       <Reviews />
+      <FAQ />
+      <Footer />
     </>
   )
 }

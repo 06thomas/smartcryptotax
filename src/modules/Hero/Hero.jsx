@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css"
-import stylesContact from "../Contact/Contact.module.css"
+import stylesCTA from "../CTA/CTA.module.css"
 import { scrollToSection } from "../../utils/helpers"
 
 function Hero() {
@@ -24,7 +24,7 @@ function Hero() {
                 </div>
 
                 <div className={styles["hero-container-button"]}>
-                    <button onClick={ () => scrollToSection(stylesContact["contact"]) }>Jetzt Starten&nbsp;&nbsp;🡢</button>
+                    <button onClick={ () => scrollToSection(stylesCTA["cta"]) }>Jetzt Starten&nbsp;&nbsp;🡢</button>
                 </div>
 
                 <div className={styles["hero-container-down"]}>

@@ -53,7 +53,7 @@
 }
 
 .process-container-infos {
-    width: 80%;
+    width: 100%;
     margin-top: 0px;
 }
 
@@ -63,13 +63,14 @@
 
 .process-container-infos div {
     height: 560px;
-    max-width: 375px;
+    width: 300px;
     margin-top: 20px;
     padding-right: 10px;
     background-color: #fff;
     box-shadow: 0 0 6px 1px rgb(224, 224, 224);
     padding: 20px;
     border-radius: 10px;
+    justify-self: center;
 }
 
 .process-container-infos div h3 {

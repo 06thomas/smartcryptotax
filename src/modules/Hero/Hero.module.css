@@ -1,7 +1,8 @@
 .hero {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#fff 0%, #df9739 100%);
+    background: #FEFAF9;
+    background: linear-gradient(180deg,rgba(254, 250, 249, 1) 25%, rgba(223, 151, 57, 1) 80%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +22,9 @@
     margin-bottom: 40px;
     padding: 5px 0;
     letter-spacing: 3px;
-    color: #ffffff;
+    color: #fefaf9;
     background-color: #df9739;
-    font-style: italic;
-      transform: skew(-15deg);
+    transform: skew(-15deg);
 }
 
 .hero-container-content div:nth-child(1) p {
@@ -62,5 +62,5 @@
     width: 300px;
     font-size: 64pt;
     position: absolute;
-    bottom: 5vh;
+    bottom: 40px;
 }

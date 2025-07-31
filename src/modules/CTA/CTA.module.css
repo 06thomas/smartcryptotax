@@ -1,39 +1,39 @@
-.contact {
+.cta {
     height: 710px;
     width: 100%;
 }
 
-.contact-container {
+.cta-container {
     display: flex;
     justify-content: center;
 }
 
-.contact-container-form {
+.cta-container-form {
     height: 710px;
-    width: 90vw;
+    width: 340px;
     background-color: #fff;
     box-shadow: 0 0 6px 1px rgb(224, 224, 224);
     border-radius: 10px;
 }
 
-.contact-container-form-title {
+.cta-container-form-title {
     padding: 0 !important;
     display: flex;
     align-items: center;
 }
 
-.contact-container-form-title h3 {
+.cta-container-form-title h3 {
     font-size: 20pt;
     font-weight: 500;
     color: #2b2e35;
     padding: 12px 15px;
 }
 
-.contact-container-form div {
+.cta-container-form div {
     padding: 20px;
 }
 
-.contact-container-form div p:nth-child(2) {
+.cta-container-form div p:nth-child(2) {
     margin-top: 60px;
     font-size: 14pt;
     font-weight: 500;
@@ -42,14 +42,14 @@
     padding: 5px 0;
 }
 
-.contact-container-form div p:nth-child(3) {
+.cta-container-form div p:nth-child(3) {
     font-size: 10pt;
     font-weight: 600;
     padding: 2px 0;
     color: #727272;
 }
 
-.contact-container-form div button {
+.cta-container-form div button {
     height: 50px;
     width: 160px;
     margin-top: 30px;
@@ -63,18 +63,18 @@
     background-color: #DF9739;
 }
 
-.contact-container-form div ul {
+.cta-container-form div ul {
     margin-top: 20px;
     list-style: none;
 }
 
-.contact-container-form div ul li {
+.cta-container-form div ul li {
     height: 45px;
     display: flex;
     align-items: center;
     font-size: 10pt;
 }
 
-.contact-container-form div ul li span:nth-child(1) {
+.cta-container-form div ul li span:nth-child(1) {
     padding: 10px;
 }

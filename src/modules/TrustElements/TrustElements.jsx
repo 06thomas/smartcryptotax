@@ -35,18 +35,22 @@ function TrustElements() {
         if (!container) return;
 
         let animationFrameId;
+        let lastTimestamp = null;
         let x = 0;
+        const speed = 100;
 
         const singleListWidth = container.scrollWidth / 2;
 
-        function animate() {
-            x += 1.5;
-
-            if (x >= singleListWidth) {
-                x = 0;
+        function animate(timestamp) {
+            if (lastTimestamp !== null) {
+                const delta = timestamp - lastTimestamp;
+                x += (speed * delta) / 1000;
+                if (x >= singleListWidth) {
+                    x = 0;
+                }
+                setTranslateX(-x);
             }
-
-            setTranslateX(-x);
+            lastTimestamp = timestamp;
             animationFrameId = requestAnimationFrame(animate);
         }
 

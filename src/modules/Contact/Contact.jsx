@@ -6,7 +6,7 @@ function Contact() {
             <div className={styles["contact-container"]}>
                 <div className={styles["contact-container-form"]}>
                     <div>
-                        <div class={styles["contact-container-form-title"]}>
+                        <div className={styles["contact-container-form-title"]}>
                             <img src="https://placehold.co/100x100" />
                             <h3>Krypto Daten Vorbereiten</h3>
                         </div>

@@ -11,13 +11,21 @@
 
 .hero-container {
     text-align: center;
-    padding: 10px;
-    width: 270px;
+    width: 300px;
+    height: 100%;
 }
 
 .hero-container-title {
+    margin-top: 100px;
     font-size: 16pt;
     margin-bottom: 40px;
+    padding: 5px 0;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    color: #ffffff;
+    background-color: #df9739;
+    font-style: italic;
+      transform: skew(-15deg);
 }
 
 .hero-container-content div:nth-child(1) p {
@@ -32,18 +40,28 @@
 .hero-container-content div:nth-child(2) p {
     font-size: 10pt;
     padding: 2px;
+    line-height: 20px;
 }
 
 .hero-container-button {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .hero-container-button button {
     height: 60px;
     width: 230px;
-    background-color: #fff;
+    background-color: #fefaf9;
     border: 0;
     border-radius: 5px;
     font-size: 14pt;
     padding: 5px;
+    letter-spacing: 1px;
+}
+
+.hero-container-down {
+    height: 100px;
+    width: 270px;
+    font-size: 64pt;
+    position: absolute;
+    bottom: 0;
 }

@@ -1,5 +1,5 @@
 .process {
-    height: 1630px;
+    height: 1660px;
     width: 100%;
 }
 
@@ -29,7 +29,7 @@
     visibility: hidden;
     height: 100vh;
     width: 2px;
-    background-color: #397CDF;
+    background-color: #df9739;
     z-index: -1;
     left: 29px;
 }
@@ -55,7 +55,7 @@
 }
 
 .process-container-infos div {
-    height: 530px;
+    height: 540px;
     max-width: 375px;
     margin-top: 20px;
     padding-right: 10px;
@@ -67,8 +67,8 @@
 
 .process-container-infos div h3 {
     font-size: 22pt;
-    font-style: italic;
     padding: 10px 0;
+    font-style: italic;
 }
 
 .process-container-infos div ul {
@@ -80,8 +80,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-weight: 500;
 }
 
 .process-container-infos div p {
     padding: 10px 0;
+    font-weight: 500;
+    line-height: 22px;
 }

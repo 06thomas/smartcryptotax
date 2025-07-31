@@ -1,38 +1,38 @@
 import styles from "./Process.module.css"
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function Process() {
-    var elapsed = false;
-    var loadedHider = false;
+    const elapsed = useRef(false);
+    const loadedHider = useRef(false);
 
     useEffect(() => {
         const handleScroll = () => {
             var sectionProcess = document.querySelector("." + styles["process"]);
             var el = document.querySelector("." + styles["process-container-media-scroll"] + " div:nth-child(1)");
 
-            if(!loadedHider) {
+            if(!loadedHider.current) {
                 document.querySelector("." + styles["process-container-hide-trace"]).style.height = sectionProcess.getBoundingClientRect().top + window.scrollY + "px";
-                loadedHider = true;
+                loadedHider.current = true;
             }
 
             if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= -screen.height/2) {
-                if(!elapsed) el.classList.add(styles["active"]);
+                if(!elapsed.current) el.classList.add(styles["active"]);
 
                 if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= sectionProcess.offsetHeight - screen.height/2) {
-                    if(!elapsed) {
+                    if(!elapsed.current) {
                         el.classList.add(styles["elapsed"]);
 
                         el.classList.remove(styles["active"]);
                         el.style.height = sectionProcess.offsetHeight + "px";
-                        elapsed = true;
+                        elapsed.current = true;
                     }
                 } else {
-                    if(elapsed) {
+                    if(elapsed.current) {
                         el.classList.add(styles["active"]);
 
                         el.classList.remove(styles["elapsed"]);
                         el.style.height = "";
-                        elapsed = false;
+                        elapsed.current = false;
                     }
                 }
             } else {
@@ -58,27 +58,30 @@ function Process() {
 
                 <div className={styles["process-container-infos"]}>
                     <div>
-                        <img src="https://placehold.co/250x150" />
+                        <img src="https://placehold.co/260x150" />
                         <h3>Kontaktaufnahme</h3>
 
                         <ul>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Kostenloses Erstgespräch vereinbaren</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Unkompliziertes Online-Formular</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Persönlicher Ansprechpartner von Anfang an</span>
@@ -89,27 +92,30 @@ function Process() {
                     </div>
 
                     <div>
-                        <img src="https://placehold.co/250x150" />
+                        <img src="https://placehold.co/260x150" />
                         <h3>Daten sammeln</h3>
 
                         <ul>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Transparente Auswertung deiner Wallets</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Alle Börsen & Transaktionen im Blick</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Sicherer Umgang mit deinen Krypto-Daten</span>
@@ -120,27 +126,30 @@ function Process() {
                     </div>
 
                     <div>
-                        <img src="https://placehold.co/250x150" />
+                        <img src="https://placehold.co/260x150" />
                         <h3>Aufbereitung</h3>
 
                         <ul>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Kompletter Report für deinen Steuerberater</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Zeit & Nerven bei der Steuer sparen</span>
                             </li>
                             <li>
-                                <span><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#397CDF" />
+                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
                                 <span>Klar strukturiert & sofort einsetzbar</span>

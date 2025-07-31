@@ -1,4 +1,6 @@
 import styles from "./Hero.module.css"
+import stylesContact from "../Contact/Contact.module.css"
+import { scrollToSection } from "../../utils/helpers"
 
 function Hero() {
     return(
@@ -22,7 +24,11 @@ function Hero() {
                 </div>
 
                 <div className={styles["hero-container-button"]}>
-                    <button>Jetzt Starten →</button>
+                    <button onClick={ () => scrollToSection(stylesContact["contact"]) }>Jetzt Starten&nbsp;&nbsp;🡢</button>
+                </div>
+
+                <div className={styles["hero-container-down"]}>
+                    <svg onClick={ () => window.scrollTo(0, screen.height*0.85) } xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="none"  stroke="#fff"  strokeWidth="1"  strokeLinecap="round"  strokeLinejoin="round"  className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                 </div>
             </div>
         </section>

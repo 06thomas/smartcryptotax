@@ -37,7 +37,7 @@ function TrustElements() {
         let animationFrameId;
         let lastTimestamp = null;
         let x = 0;
-        const speed = 100;
+        const speed = 50;
 
         const singleListWidth = container.scrollWidth / 2;
 

@@ -21,7 +21,6 @@
     margin-bottom: 40px;
     padding: 5px 0;
     letter-spacing: 3px;
-    text-shadow: 0px 0px 3px rgb(0, 0, 0);
     color: #ffffff;
     background-color: #df9739;
     font-style: italic;
@@ -44,7 +43,7 @@
 }
 
 .hero-container-button {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .hero-container-button button {
@@ -60,8 +59,8 @@
 
 .hero-container-down {
     height: 100px;
-    width: 270px;
+    width: 300px;
     font-size: 64pt;
     position: absolute;
-    bottom: 0;
+    bottom: 5vh;
 }

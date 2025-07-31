@@ -1,5 +1,5 @@
 .process {
-    height: 1660px;
+    height: 1720px;
     width: 100%;
 }
 
@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-.process-container-media-scroll div {
+.process-container-media-line {
     position: static;
     visibility: hidden;
     height: 100vh;
@@ -32,6 +32,13 @@
     background-color: #df9739;
     z-index: -1;
     left: 29px;
+}
+
+.process-container-media-scroll div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 50px;
 }
 
 .active {
@@ -55,7 +62,7 @@
 }
 
 .process-container-infos div {
-    height: 540px;
+    height: 560px;
     max-width: 375px;
     margin-top: 20px;
     padding-right: 10px;

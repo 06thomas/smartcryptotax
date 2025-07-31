@@ -8,7 +8,7 @@ function Process() {
     useEffect(() => {
         const handleScroll = () => {
             var sectionProcess = document.querySelector("." + styles["process"]);
-            var el = document.querySelector("." + styles["process-container-media-scroll"] + " div:nth-child(1)");
+            var el = document.querySelector("." + styles["process-container-media-line"]);
 
             if(!loadedHider.current) {
                 document.querySelector("." + styles["process-container-hide-trace"]).style.height = sectionProcess.getBoundingClientRect().top + window.scrollY + "px";
@@ -53,6 +53,8 @@ function Process() {
                 <div className={styles["process-container-hide-trace"]}></div>
 
                 <div className={styles["process-container-media-scroll"]}>
+                    <div className={styles["process-container-media-line"]}></div>
+                    <div></div>
                     <div></div>
                 </div>
 

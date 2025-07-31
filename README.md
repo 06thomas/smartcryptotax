@@ -5,7 +5,7 @@
 12:00-15:20
 16:10-16:25
 17:00-17:30
-21:00-
+21:00-22:00
 
 
 TODO:
@@ -13,6 +13,5 @@ TODO:
 header....... logo.... navbar???
 process media scroll fade
 anfragen button
-trust-elements
 faq
 footer

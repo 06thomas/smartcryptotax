@@ -1,5 +1,5 @@
 .reviews {
-    height: 630px;
+    height: 650px;
     width: 100%;
     background-color: #DF9739;
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 .reviews-container-content {
-    height: 380px;
+    height: 420px;
     width: 100vw;
     display: flex;
     justify-content: flex-start;
@@ -47,7 +47,7 @@
     box-shadow: 0px 0px 14px -2px #D4D4D4;
     border-radius: 10px;
     padding: 10px;
-    margin: 0 20px;
+    margin: 20px;
     color: #fff;
 }
 

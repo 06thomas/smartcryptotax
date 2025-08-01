@@ -41,7 +41,7 @@ function CTA() {
                         <p>Preis auf Anfrage</p>
                         <p>Die Kosten werden durch die Komplexität und den Umfang der Aufgabe bestimmt.</p>
 
-                        <button onClick={() => setIsOpen(true)}>Anfragen</button>
+                        <button onClick={() => setIsOpen(false)}>Anfragen</button>
 
                         <ul>
                             <li>

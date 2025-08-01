@@ -19,17 +19,26 @@
 
 .trust-elements-container-list {
     height: 100px;
-    width: 100vw;
     display: flex;
+    width: max-content;
+    animation: scroll-horizontal 60s linear infinite;
+
     justify-content: flex-start;
-    overflow-x: visible;
     align-items: center;
     gap: 60px;
-    scroll-behavior: smooth;
 
     white-space: nowrap;
     will-change: transform;
     user-select: none;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .trust-elements-container-list-wrapper::-webkit-scrollbar {
@@ -38,8 +47,10 @@
 
 .trust-elements-container-list div {
     display: flex;
-    height: 50px;
     align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    white-space: nowrap;
 }
 
 .trust-elements-container-list div p {
@@ -67,6 +78,6 @@
     height: 100px;
     width: 50px;
     background: #fefaf9;
-    background: linear-gradient(-90deg,#fefaf9 20%, #ffffff00 100%);
+    background: linear-gradient(-90deg,#fefaf9 30%, #ffffff00 100%);
     z-index: 1;
 }

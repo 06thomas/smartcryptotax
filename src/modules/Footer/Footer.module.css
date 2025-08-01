@@ -1,7 +1,7 @@
 .footer {
     height: 280px;
     width: 100%;
-    background-color: #DF9739;
+    background-color: #ffa736;
     color: #fefaf9;
     position: relative;
 }
@@ -18,7 +18,6 @@
     padding: 30px 0 10px 0;
     font-size: 18pt;
     text-align: center;
-    font-style: italic;
 }
 
 .footer-container-contact {

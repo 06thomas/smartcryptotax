@@ -8,7 +8,7 @@
 }
 
 .process-container-hide-trace {
-    width: 40px;
+    width: 20px;
     margin: 0 10px;
     position: absolute;
     top: 0;
@@ -17,11 +17,12 @@
 }
 
 .process-container-media-scroll {
-    height: 100%;
-    width: 40px;
+    height: 1720px;
+    width: 20px;
     margin: 0 10px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .process-container-media-line {
@@ -29,16 +30,29 @@
     visibility: hidden;
     height: 100vh;
     width: 2px;
-    background-color: #df9739;
+    background-color: #ffa736;
     z-index: -1;
-    left: 29px;
+    left: 19px;
 }
 
 .process-container-media-scroll div:nth-child(2) {
+    height: 100px;
+    width: 30px;
+    flex-shrink: 0;
     position: absolute;
     top: 0;
-    height: 50px;
-    width: 50px;
+    background: #fefaf9;
+    background: linear-gradient(180deg,rgb(254, 250, 249) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+.process-container-media-scroll div:nth-child(3) {
+    height: 100px;
+    width: 30px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    background: #fefaf9;
+    background: linear-gradient(0deg,rgb(254, 250, 249) 0%, rgba(255, 255, 255, 0) 80%);
 }
 
 .active {
@@ -49,11 +63,9 @@
 
 .elapsed {
     visibility: visible !important;
-    position: absolute !important;
 }
 
 .process-container-infos {
-    width: 100%;
     margin-top: 0px;
 }
 

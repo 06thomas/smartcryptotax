@@ -1,9 +1,36 @@
 import styles from "./CTA.module.css"
+import React, { useState, useEffect } from 'react';
 
 function CTA() {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+
+            const preventTouch = (e) => e.preventDefault();
+            document.addEventListener('touchmove', preventTouch, { passive: false });
+
+            return () => {
+                document.body.style.overflow = '';
+                document.removeEventListener('touchmove', preventTouch);
+            };
+        }
+    }, [isOpen]);
+
     return(
         <section className={styles["cta"]}>
             <div className={styles["cta-container"]}>
+                {isOpen && (
+                    <div className={styles["cta-open"]}>
+                        <div className={styles["cta-open-content"]}>
+                            <button onClick={() => setIsOpen(false)} className={styles["cta-open-close"]}>
+                                <i class="fa-regular fa-circle-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                )}
+
                 <div className={styles["cta-container-form"]}>
                     <div>
                         <div className={styles["cta-container-form-title"]}>
@@ -14,7 +41,7 @@ function CTA() {
                         <p>Preis auf Anfrage</p>
                         <p>Die Kosten werden durch die Komplexität und den Umfang der Aufgabe bestimmt.</p>
 
-                        <button>Anfragen</button>
+                        <button onClick={() => setIsOpen(true)}>Anfragen</button>
 
                         <ul>
                             <li>

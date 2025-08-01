@@ -11,48 +11,48 @@ function FAQ() {
                 <div className={styles["faq-container-content"]}>
                     <details className={styles["faq-container-content-card"]}>
                         <summary>
-                            <span>1</span> What is SmartCryptoTax?
+                            <span>1</span> Was ist SmartCryptoTax?
                         </summary>
                         <div>
                             <p>
-                                SmartCryptoTax is an open-source, privacy-focused cryptocurrency tax calculator designed to help users accurately calculate their crypto tax liabilities. It supports various tax calculation methods and provides tools to manage and report crypto transactions efficiently.
+                                SmartCryptoTax ist ein Open-Source-Kryptowährungssteuerrechner mit Fokus auf Datenschutz. Er hilft Nutzern dabei, ihre Steuerpflichten aus Krypto-Transaktionen genau zu berechnen. Die Plattform unterstützt verschiedene Berechnungsmethoden und bietet Tools zur Verwaltung und Meldung von Transaktionen.
                             </p>
                         </div>
                     </details>
 
                     <details className={styles["faq-container-content-card"]}>
                         <summary>
-                            <span>2</span> How do I get started with SmartCryptoTax?
+                            <span>2</span> Wie kann ich mit SmartCryptoTax anfangen?
                         </summary>
                         <div>
                             <p>
-                                To begin using SmartCryptoTax, visit the official website and follow the setup instructions provided. The platform offers a user-friendly interface to guide you through the process of importing your transaction data and generating tax reports.
+                                Besuche die offizielle Website von SmartCryptoTax und folge den dort bereitgestellten Anweisungen zur Einrichtung. Die Plattform bietet eine benutzerfreundliche Oberfläche, die dich Schritt für Schritt durch das Importieren deiner Transaktionsdaten und das Erstellen von Steuerberichten führt.
                             </p>
                         </div>
                     </details>
 
                     <details className={styles["faq-container-content-card"]}>
                         <summary>
-                            <span>3</span> What features does SmartCryptoTax offer?
+                            <span>3</span> Welche Funktionen bietet SmartCryptoTax?
                         </summary>
                         <div>
                             <p>
-                                SmartCryptoTax includes features such as:<br />
-                                - Support for multiple tax calculation methods.<br />
-                                - Tools to import and manage transaction data.<br />
-                                - Generation of tax reports compatible with various tax authorities.<br />
-                                - Privacy-focused design to ensure user data security.
+                                SmartCryptoTax bietet unter anderem folgende Funktionen:<br />
+                                - Unterstützung verschiedener Methoden zur Steuerberechnung<br />
+                                - Tools zum Importieren und Verwalten von Transaktionsdaten<br />
+                                - Erstellung von Steuerberichten, die mit verschiedenen Steuerbehörden kompatibel sind<br />
+                                - Datenschutzorientiertes Design zum Schutz der Nutzerdaten
                             </p>
                         </div>
                     </details>
 
                     <details className={styles["faq-container-content-card"]}>
                         <summary>
-                            <span>4</span> Is SmartCryptoTax suitable for users in Austria?
+                            <span>4</span> Ist SmartCryptoTax für Nutzer in Österreich geeignet?
                         </summary>
                         <div>
                             <p>
-                                Yes, SmartCryptoTax can be used by Austrian users. However, it's important to note that Austrian tax laws may have specific requirements regarding cryptocurrency transactions. For instance, profits from selling or disposing of cryptocurrency are taxed as income from capital assets, regardless of the holding period. It's advisable to consult with a tax professional familiar with Austrian tax laws to ensure compliance. 
+                                Ja, SmartCryptoTax kann von Nutzern in Österreich verwendet werden. Beachte jedoch, dass die österreichischen Steuergesetze spezielle Anforderungen an Kryptowährungstransaktionen stellen können. Beispielsweise werden Gewinne aus dem Verkauf oder der Veräußerung von Kryptowährungen unabhängig von der Haltedauer als Einkünfte aus Kapitalvermögen besteuert. Es ist ratsam, einen Steuerberater zu konsultieren, der mit den österreichischen Gesetzen vertraut ist, um sicherzustellen, dass alle Vorschriften eingehalten werden.
                             </p>
                         </div>
                     </details>
@@ -62,4 +62,4 @@ function FAQ() {
     );
 }
 
-export default FAQ
+export default FAQ;

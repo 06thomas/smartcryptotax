@@ -1,7 +1,7 @@
 .reviews {
     height: 644px;
     width: 100%;
-    background-color: #DF9739;
+    background-color: #ffa736;
     display: flex;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@
     flex: 0 0 auto;
     height: 380px;
     width: 280px;
-    background-color: #DF9739;
+    background-color: #ffa736;
     border: 1px solid #fefaf9;
     box-shadow: 0px 0px 14px -2px #D4D4D4;
     border-radius: 10px;

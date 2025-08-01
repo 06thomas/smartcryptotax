@@ -10,37 +10,37 @@ import Footer from "./modules/Footer/Footer.jsx"
 import React, { useEffect, useRef, useState } from 'react';
 
 function App() {
-  // const [authorized, setAuthorized] = useState(false);
-  // const prompted = useRef(false);
+    // const [authorized, setAuthorized] = useState(false);
+    // const prompted = useRef(false);
 
-  // useEffect(() => {
-  //   if (prompted.current) return; // Prevent running twice
-  //   prompted.current = true;
+    // useEffect(() => {
+    //     if (prompted.current) return; // Prevent running twice
+    //         prompted.current = true;
 
-  //   const password = prompt('Enter password:');
-  //   if (password === 'smartcrypto') {
-  //     setAuthorized(true);
-  //   } else {
-  //     alert('Wrong password!');
-  //     window.location.reload();
-  //   }
-  // }, []);
+    //         const password = prompt('Enter password:');
+    //     if (password === 'smartcrypto') {
+    //         setAuthorized(true);
+    //     } else {
+    //         alert('Wrong password!');
+    //         window.location.reload();
+    //     }
+    // }, []);
 
-  return (
-    <>
-      <Hero />
-      <SectionBreak margin="0 0 30px 0" width="100%" />
-      <Benefit />
-      <SectionBreak />
-      <Process />
-      <SectionBreak />
-      <CTA />
-      <TrustElements />
-      <Reviews />
-      <FAQ />
-      <Footer />
-    </>
-  )
+    return (
+        <>
+        <Hero />
+        <SectionBreak margin="0 0 30px 0" width="100%" />
+        <Benefit />
+        <SectionBreak />
+        <Process />
+        <SectionBreak />
+        <CTA />
+        <TrustElements />
+        <Reviews />
+        <FAQ />
+        <Footer />
+        </>
+    )
 }
 
 export default App

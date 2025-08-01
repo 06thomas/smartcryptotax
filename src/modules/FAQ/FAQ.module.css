@@ -24,6 +24,9 @@
   box-shadow: 0 0 6px 1px rgb(224, 224, 224);
   border-radius: 15px;
   margin: 0 10px;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .faq-container-content-card {
@@ -45,7 +48,6 @@
   font-size: 1rem;
   color: #3b566e;
   position: relative;
-  user-select: none;
   outline: none;      
 }
 
@@ -55,7 +57,7 @@
   height: 20px;
   line-height: 20px;
   text-align: center;
-  background: #df9739;
+  background: #ffa736;
   color: #fefaf9;
   font-size: 12px;
   border-radius: 50%;
@@ -66,7 +68,7 @@
 .faq-container-content-card summary::after {
   content: "▼";
   font-size: 12px;
-  color: #df9739;
+  color: #ffa736;
   margin-left: auto;
   transition: transform 0.3s ease;
   transform-origin: center;

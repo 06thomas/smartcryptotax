@@ -6,12 +6,11 @@
 16:10-16:25
 17:00-17:30
 21:00-22:00
+23:30-00:45
 
 
 TODO:
 
 header....... logo.... navbar???
-process media scroll fade
 anfragen button
-faq
-footer
+impressum

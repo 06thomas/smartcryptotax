@@ -60,7 +60,7 @@
     font-weight: 550;
     color: #2b2e35;
     letter-spacing: 1px;
-    background-color: #DF9739;
+    background-color: #ffa736;
 }
 
 .cta-container-form div ul {
@@ -77,4 +77,32 @@
 
 .cta-container-form div ul li span:nth-child(1) {
     padding: 10px;
+}
+
+.cta-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2e34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cta-open-content {
+}
+
+.cta-open-close {
+    background-color: #00000000;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 18pt;
+    font-weight: 100;
 }

@@ -18,7 +18,7 @@ function Process() {
             if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= -screen.height/2) {
                 if(!elapsed.current) el.classList.add(styles["active"]);
                 
-                if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= sectionProcess.offsetHeight -screen.height/2) {
+                if ((window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) - sectionProcess.offsetHeight) + window.innerHeight/2 > -1) {
                     if(!elapsed.current) {
                         el.classList.add(styles["elapsed"]);
 
@@ -66,7 +66,7 @@ function Process() {
                         <ul>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -74,7 +74,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -82,7 +82,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -100,7 +100,7 @@ function Process() {
                         <ul>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -108,7 +108,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -116,7 +116,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -134,7 +134,7 @@ function Process() {
                         <ul>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -142,7 +142,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 
@@ -150,7 +150,7 @@ function Process() {
                             </li>
                             <li>
                                 <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#df9739" />
+                                    <circle cx="10" cy="10" r="7" fill="#ffa736" />
                                     <circle cx="10" cy="10" r="3" fill="#fff" />
                                 </svg></span>
 

@@ -21,11 +21,26 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
+    "postcss": "^8.5.6",
     "vite": "^7.0.4"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all",
+    "not ie <= 11",
+    "iOS >= 11",
+    "Android >= 6",
+    "Chrome >= 80",
+    "Firefox >= 78",
+    "Safari >= 12",
+    "Edge >= 90"
+  ]
 }

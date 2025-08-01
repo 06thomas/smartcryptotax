@@ -1,13 +1,14 @@
 import styles from "./Hero.module.css"
 import stylesCTA from "../CTA/CTA.module.css"
 import { scrollToSection } from "../../utils/helpers"
+import logoText from "../../assets/images/text.png"
 
 function Hero() {
     return(
         <section className={styles["hero"]}>
             <div className={styles["hero-container"]}>
                 <div className={styles["hero-container-title"]}>
-                    <h1>SmartCryptoTax</h1>
+                    <img src={logoText} alt="SmartCryptoTax" />
                 </div>
 
                 <div className={styles["hero-container-content"]}>

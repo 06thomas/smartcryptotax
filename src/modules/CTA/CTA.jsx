@@ -25,7 +25,7 @@ function CTA() {
                     <div className={styles["cta-open"]}>
                         <div className={styles["cta-open-content"]}>
                             <button onClick={() => setIsOpen(false)} className={styles["cta-open-close"]}>
-                                <i class="fa-regular fa-circle-xmark"></i>
+                                <i className="fa-regular fa-circle-xmark"></i>
                             </button>
                         </div>
                     </div>

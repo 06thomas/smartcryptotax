@@ -51,9 +51,9 @@ function Process() {
         <section className={styles["process"]}>
             <div className={styles["process-container"]}>
                 <div className={styles["process-container-hide-trace"]}></div>
-
+                <div className={styles["process-container-media-line"]}></div>
+                
                 <div className={styles["process-container-media-scroll"]}>
-                    <div className={styles["process-container-media-line"]}></div>
                     <div></div>
                     <div></div>
                 </div>

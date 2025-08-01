@@ -1,5 +1,5 @@
 .hero {
-    height: 550px;
+    height: 770px;
     width: 100%;
     background: #fefaf9;
     background: linear-gradient(to bottom, #fefaf9 0%, #FFF6E8 15%, #ffa736 65%);
@@ -10,8 +10,40 @@
     position: relative;
 }
 
+@media screen and (max-width: 700px) {
+    .hero {
+        height: 590px;
+    }
+
+    .hero-container {
+        width: 300px !important;
+    }
+
+    .hero-container-title img {
+        width: 300px !important;
+        margin: 50px 0 35px 0 !important;
+    }
+
+    .hero-container-content div:nth-child(1) p {
+        font-size: 12pt !important;
+    }
+
+    .hero-container-content div:nth-child(2) p {
+        font-size: 10pt !important;
+    }
+
+    .hero-container-content {
+        width: 260px !important;
+        margin-top: unset;
+    }
+
+    .hero-container-button {
+        margin-top: 45px !important;
+    }
+}
+
 .hero-container {
-    width: 300px;
+    width: 800px;
     height: 100%;
     color: rgb(1, 3, 11);
     display: flex;
@@ -19,21 +51,19 @@
     align-items: center;
 }
 
-.hero-container-title {
-    margin-top: 60px;
-    font-size: 16pt;
-    margin-bottom: 20px;
-    padding: 5px 0;
-    letter-spacing: 1px;
+.hero-container-title img {
+    width: 500px;
+    margin: 120px 0 35px 0;
 }
 
 .hero-container-content {
-    width: 260px;
+    width: 400px;
+    margin-top: 30px;
 }
 
 .hero-container-content div:nth-child(1) p {
     padding: 5px 0;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 .hero-container-content div:nth-child(2) {
@@ -41,13 +71,13 @@
 }
 
 .hero-container-content div:nth-child(2) p {
-    font-size: 10pt;
+    font-size: 12pt;
     padding: 2px;
     line-height: 20px;
 }
 
 .hero-container-button {
-    margin-top: 45px;
+    margin-top: 75px;
 }
 
 .hero-container-button button {

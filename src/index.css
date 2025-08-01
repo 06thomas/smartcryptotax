@@ -10,11 +10,16 @@
     -webkit-overflow-scrolling: touch;
 }
 
+img {
+    -webkit-user-drag: none;
+}
+
 body {
     width: 100%;
     min-width: 320px;
     font-family: "Inter";
     background-color: #fefaf9;
+    overflow-x: hidden;
 }
 
 @font-face {

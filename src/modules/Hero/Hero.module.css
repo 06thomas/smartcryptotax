@@ -1,8 +1,8 @@
 .hero {
-    height: 770px;
+    height: 750px;
     width: 100%;
-    background: #fefaf9;
-    background: linear-gradient(to bottom, #fefaf9 0%, #FFF6E8 15%, #ffa736 65%);
+    background: #00452D;
+    background: linear-gradient(to bottom, #fefaf9 0%, #cfd7c4 10%, #35aa6c 60%, #008154 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,9 @@
     position: relative;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 560px) {
     .hero {
-        height: 590px;
+        height: 660px;
     }
 
     .hero-container {
@@ -21,29 +21,29 @@
 
     .hero-container-title img {
         width: 300px !important;
-        margin: 50px 0 35px 0 !important;
+        margin: 30px 0 0 0 !important;
     }
 
-    .hero-container-content div:nth-child(1) p {
-        font-size: 12pt !important;
+    .hero-container-content h3 {
+        font-size: 10pt;
     }
 
-    .hero-container-content div:nth-child(2) p {
-        font-size: 10pt !important;
+    .hero-container-content h1 {
+        font-size: 24pt;
     }
 
-    .hero-container-content {
-        width: 260px !important;
-        margin-top: unset;
+    .hero-container-content p {
+        font-size: 8pt;
     }
 
     .hero-container-button {
-        margin-top: 45px !important;
+        margin-top: 20px !important;
     }
 }
 
 .hero-container {
-    width: 800px;
+    width: 100%;
+    max-width: 500px;
     height: 100%;
     color: rgb(1, 3, 11);
     display: flex;
@@ -57,27 +57,31 @@
 }
 
 .hero-container-content {
-    width: 400px;
+    width: 100%;
     margin-top: 30px;
 }
 
-.hero-container-content div:nth-child(1) p {
-    padding: 5px 0;
+.hero-container-content h3 {
     font-size: 14pt;
+    text-transform: uppercase;
+    color: #244d3e;
 }
 
-.hero-container-content div:nth-child(2) {
-    margin-top: 40px;
+.hero-container-content h1 {
+    font-size: 28pt;
+    padding: 20px 0;
+    color: var(--main-green);
 }
 
-.hero-container-content div:nth-child(2) p {
+.hero-container-content p {
     font-size: 12pt;
-    padding: 2px;
-    line-height: 20px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    color: #244d3e;
 }
 
 .hero-container-button {
-    margin-top: 75px;
+    margin-top: 45px;
 }
 
 .hero-container-button button {

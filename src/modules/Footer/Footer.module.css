@@ -1,7 +1,7 @@
 .footer {
     height: 295px;
     width: 100%;
-    background-color: #ffa736;
+    background-color: var(--light-green);
     position: relative;
 }
 

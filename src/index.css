@@ -1,5 +1,7 @@
 :root {
     --vh: 1vh;
+    --main-green: #00452D;
+    --light-green: #4ab37b;
 }
 
 * {

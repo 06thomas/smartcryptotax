@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css"
 import stylesCTA from "../CTA/CTA.module.css"
 import { scrollToSection } from "../../utils/helpers"
-import logoText from "../../assets/images/text.png"
+import logoText from "../../assets/images/text-black.png"
 
 function Hero() {
     return(
@@ -12,16 +12,10 @@ function Hero() {
                 </div>
 
                 <div className={styles["hero-container-content"]}>
-                    <div>
-                        <p>&#x1F4B0; Vermeide teure Steuerfehler</p>
-                        <p>Du bekommst einen vollständigen, steuerfertigen Bericht - <b>ohne Aufwand für dich.</b></p>
-                    </div>
+                    <h3>Krypto-Steuerexperten, die dir den Aufwand abnehmen</h3>
+                    <h1>Rundum-Service<br /> für deine Krypto-Steuern</h1>
 
-                    <div>
-                        <p>&#x2705; Alle Wallets, Börsen, DeFi, NFTs</p>
-                        <p>&#x1F517; Aufbereitung mit CoinTracking</p>
-                        <p>&#x1F30D; Für Kunden in 🇪🇺 & weltweit</p>
-                    </div>
+                    <p>Die Steuererklärung für Kryptowährungen kann kompliziert und zeitraubend sein. Mit dem CoinTracking Full-Service musst du dich nicht selbst darum kümmern - unsere erfahrenen Experten übernehmen das für dich, effizient und zuverlässig.</p>
                 </div>
 
                 <div className={styles["hero-container-button"]}>

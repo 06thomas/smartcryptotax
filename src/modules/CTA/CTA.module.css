@@ -60,7 +60,7 @@
     font-weight: 550;
     color: #2b2e35;
     letter-spacing: 1px;
-    background-color: #ffa736;
+    background-color: var(--light-green);
 }
 
 .cta-container-form div ul {

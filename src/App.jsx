@@ -30,9 +30,9 @@ function App() {
         <>
         <Hero />
         <SectionBreak margin="0 0 30px 0" width="100%" />
-        <Benefit />
-        <SectionBreak />
         <Process />
+        <SectionBreak />
+        <Benefit />
         <SectionBreak />
         <CTA />
         <TrustElements />

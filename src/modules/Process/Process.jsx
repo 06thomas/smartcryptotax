@@ -16,7 +16,9 @@ function Process() {
             }
 
             if (window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) >= -screen.height/2) {
-                if(!elapsed.current) el.classList.add(styles["active"]);
+                if(!elapsed.current) {
+                    el.classList.add(styles["active"]);
+                }
                 
                 if ((window.scrollY - (sectionProcess.getBoundingClientRect().top + window.scrollY) - sectionProcess.offsetHeight) + window.innerHeight/2 > -1) {
                     if(!elapsed.current) {
@@ -58,141 +60,42 @@ function Process() {
                     <div></div>
                 </div>
 
+                <div className={styles["process-container-title"]}>
+                    <h1>So funktioniert der<br />Full-Sevice</h1>
+                    <p>Unser Full-Service begleitet dich Schritt für Schritt - für eine einfache, sichere und stressfreie Krypto-Steuererklärung.</p>
+                </div>
+
                 <div className={styles["process-container-infos"]}>
-                    <div>
-                        <img src="https://placehold.co/260x150" />
-                        <h3>Kostenloses Erstgespräch</h3>
+                    <div className={styles["process-container-infos-item"]}>
+                        <div>
+                            <h3>1. Kostenloses Erstgespräch</h3>
 
-                        <ul>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Klärung deiner individuellen Krypto-Steuersituation</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Ersteinschätzung durch erfahrene Steuerexperten</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Unverbindlich & kostenlos - der ideale Einstieg</span>
-                            </li>
-                        </ul>
-
-                        <p>Buche dein unverbindliches 15-minütiges Beratungsgespräch mit unseren Krypto-Steuerexperten.</p>
+                            <p>Buche ein unverbindliches 15-minütiges Beratungsgespräch.</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src="https://placehold.co/260x150" />
-                        <h3>Sichere Datenübermittlung</h3>
+                    <div className={styles["process-container-infos-item"]}>
+                        <div>
+                            <h3>2. Sichere Datenübermittlung</h3>
 
-                        <ul>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>DSGVO-konforme & verschlüsselte Datenübertragung</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Unterstützung bei der strukturierten Aufbereitung deiner Transaktionen</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Direkter Kontakt zu einem persönlichen Ansprechpartner</span>
-                            </li>
-                        </ul>
-
-                        <p>Übermittle deine Transaktionsdaten verschlüsselt und datenschutzkonform an unser Expertenteam.</p>
+                            <p>Sende deine Transaktionen verschlüsselt und datenschutzkonform an unser Expertenteam.</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src="https://placehold.co/260x150" />
-                        <h3>Steuerliche Aufbereitung</h3>
+                    <div className={styles["process-container-infos-item"]}>
+                        <div>
+                            <h3>3. Steuerliche Aufbereitung</h3>
 
-                        <ul>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Analyse deiner Wallets, Börsen & Transaktionshistorie</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Optimierung deiner Steuerlast im rechtlichen Rahmen</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Volle Transparenz über alle Berechnungen & Schritte</span>
-                            </li>
-                        </ul>
-
-                        <p>Wir übernehmen die komplette Berechnung deiner Krypto-Steuern - du kannst dich entspannt zurücklehnen.</p>
+                            <p>Wir analysieren, bereinigen und strukturieren deine Krypto-Daten - für eine steuerlich optimale Auswertung.</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src="https://placehold.co/260x150" />
-                        <h3>Persönlicher Steuerreport</h3>
+                    <div className={styles["process-container-infos-item"]}>
+                        <div>
+                            <h3>4. Persönlicher Steuerreport</h3>
 
-                        <ul>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Individueller Steuerreport für dein Wohnsitzland</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Klare Darstellung von Gewinnen, Verlusten & Haltefristen</span>
-                            </li>
-                            <li>
-                                <span><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="10" cy="10" r="7" fill="#4ab37b" />
-                                    <circle cx="10" cy="10" r="3" fill="#fff" />
-                                </svg></span>
-
-                                <span>Ideal zur Vorlage beim Finanzamt oder Steuerberater</span>
-                            </li>
-                        </ul>
-
-                        <p>Erhalte einen verständlich aufbereiteten, länderspezifischen Report - ideal für das Finanzamt oder deinen Steuerberater.</p>
+                            <p>Du erhältst einen länderspezifischen Steuerreport mit klaren Erklärungen - bereit für das Finanzamt oder deinen Steuerberater.</p>
+                        </div>
                     </div>
                 </div>
             </div>

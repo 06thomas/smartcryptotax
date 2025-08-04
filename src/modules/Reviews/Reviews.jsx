@@ -28,8 +28,8 @@ function Reviews() {
         <section className={styles["reviews"]}>
             <div className={styles["reviews-container"]}>
                 <div className={styles["reviews-container-title"]}>
-                    <h1>Rezensionen</h1>
-                    <p>Echte Meinungen von echten Menschen – überzeugen Sie sich selbst.</p>
+                    <h1>Bewertungen</h1>
+                    <p>Ergebnisse, die für sich sprechen.</p>
                 </div>
 
                 <div className={styles["reviews-marquee"]}>

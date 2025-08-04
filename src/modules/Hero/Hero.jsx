@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css"
 import stylesCTA from "../CTA/CTA.module.css"
 import { scrollToSection } from "../../utils/helpers"
-import logoText from "../../assets/images/text1.png"
+import logoText from "../../assets/images/text.png"
 
 function Hero() {
     return(
@@ -13,7 +13,7 @@ function Hero() {
 
                 <div className={styles["hero-container-content"]}>
                     <h3>Krypto-Steuerexperten, die dir den Aufwand abnehmen</h3>
-                    <h1>Rundum-Service<br /> für deine Krypto-Steuern</h1>
+                    <h1>Full-Service<br /> für deine Krypto-Steuern</h1>
 
                     <p>Du musst dich nicht durch zeitraubende Steuerformulare quälen. Wir übernehmen das - effizient, gesetzeskonform und stressfrei.</p>
                 </div>

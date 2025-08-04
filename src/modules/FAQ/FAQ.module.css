@@ -57,7 +57,7 @@
   height: 20px;
   line-height: 20px;
   text-align: center;
-  background: #4ab37b;
+  background: var(--light-green);
   color: #fefaf9;
   font-size: 12px;
   border-radius: 50%;
@@ -68,7 +68,7 @@
 .faq-container-content-card summary::after {
   content: "▼";
   font-size: 12px;
-  color: #4ab37b;
+  color: var(--light-green);
   margin-left: auto;
   transition: transform 0.3s ease;
   transform-origin: center;

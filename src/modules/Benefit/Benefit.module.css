@@ -18,6 +18,7 @@
     font-size: 18pt;
     font-weight: 500;
     text-align: center;
+    transform: skew(-10deg);
 }
 
 .benefit-container-title h1 {
@@ -46,8 +47,9 @@
     height: 220px;
     width: 330px;
     margin: 10px;
-    background-color: transparent;
-    box-shadow: 0 0 6px 3px var(--light-green);
+    background-color: #fff;
+    border: 2px solid var(--light-green);
+    box-shadow: 0 0 6px 1px var(--light-green);
     border-radius: 20px;
 }
 
@@ -75,12 +77,12 @@
 
 @media screen and (min-width: 714px) and (max-width: 1414px) {
     .benefit {
-        height: 560px;
+        height: 580px;
     }
 }
 
 @media screen and (max-width: 714px) {
     .benefit {
-        height: 1040px;
+        height: 1060px;
     }
 }

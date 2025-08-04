@@ -1,8 +1,7 @@
 .hero {
     height: 750px;
     width: 100%;
-    background: #00452D;
-    background: linear-gradient(to bottom, #fefaf9 0%, #cfd7c4 10%, #35aa6c 60%, #008154 100%);
+    background: linear-gradient(to bottom, #cfd7c4 10%, #35aa6c 60%, #008154 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,14 +69,12 @@
 .hero-container-content h1 {
     font-size: 28pt;
     padding: 20px 0;
-    color: var(--main-green);
 }
 
 .hero-container-content p {
     font-size: 12pt;
     font-weight: 550;
     letter-spacing: 1px;
-    color: #244d3e;
 }
 
 .hero-container-button {

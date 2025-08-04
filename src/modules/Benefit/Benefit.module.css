@@ -1,5 +1,5 @@
 .benefit {
-    height: 300px;
+    height: 340px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,14 +36,17 @@
 
 .benefit-container-bulletpoints-collection div {
     height: 240px;
-    width: 350px;
-    margin: 0 5px;
+    width: 353px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 6px 3px var(--light-green);
+    border-radius: 10px;
 }
 
 .benefit-container-bulletpoints-collection div h3 {
     padding: 20px 10px 10px 10px;
-    color: var(--light-green);
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 16pt;
     height: 75px;
 }
 
@@ -61,14 +64,14 @@
     padding: 10px;
 }
 
-@media screen and (min-width: 734px) and (max-width: 1454px) {
+@media screen and (min-width: 760px) and (max-width: 1506px) {
     .benefit {
-        height: 525px;
+        height: 600px;
     }
 }
 
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 760px) {
     .benefit {
-        height: 990px;
+        height: 1120px;
     }
 }

@@ -17,8 +17,9 @@
 }
 
 .footer-container-content-title {
-    justify-self: center;
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .footer-container-content-title img {

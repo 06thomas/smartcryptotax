@@ -2,9 +2,10 @@ import Hero from "./modules/Hero/Hero.jsx"
 import Benefit from "./modules/Benefit/Benefit.jsx"
 import Process from "./modules/Process/Process.jsx"
 import SectionBreak from "./modules/SectionBreak/SectionBreak.jsx"
-import CTA from "./modules/CTA/CTA.jsx"
+import CTA_Form from "./modules/CTA_Form/CTA_Form.jsx"
 import TrustElements from "./modules/TrustElements/TrustElements.jsx"
 import Reviews from "./modules/Reviews/Reviews.jsx"
+import Call_CTA from "./modules/Call_CTA/Call_CTA.jsx"
 import FAQ from "./modules/FAQ/FAQ.jsx"
 import Footer from "./modules/Footer/Footer.jsx"
 import React, { useEffect, useRef, useState } from 'react';
@@ -18,7 +19,7 @@ function App() {
     //         prompted.current = true;
 
     //         const password = prompt('Enter password:');
-    //     if (password === 'smartcrypto') {
+    //     if (password === 'inprogress') {
     //         setAuthorized(true);
     //     } else {
     //         alert('Wrong password!');
@@ -34,9 +35,12 @@ function App() {
         <SectionBreak />
         <Benefit />
         <SectionBreak />
-        <CTA />
+        <CTA_Form />
         <TrustElements />
         <Reviews />
+        <SectionBreak margin="0 0 0 0" width="100%" />
+        <Call_CTA />
+        <SectionBreak margin="0 0 0 0" width="100%" />
         <FAQ />
         <Footer />
         </>

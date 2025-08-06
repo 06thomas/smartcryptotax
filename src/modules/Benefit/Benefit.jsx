@@ -1,4 +1,8 @@
 import styles from "./Benefit.module.css"
+import expertImage from "../../assets/images/benefit/expert.png"
+import diskImage from "../../assets/images/benefit/disk.png"
+import stocksImage from "../../assets/images/benefit/stocks.png"
+import carefreeImage from "../../assets/images/benefit/carefree.png"
 
 function Benefit() {
     return(
@@ -11,7 +15,8 @@ function Benefit() {
                 <div className={styles["benefit-container-bulletpoints"]}>
                     <div className={styles["benefit-container-bulletpoints-collection"]}>
                         <div>
-                            <h3>Experten-Beratung</h3>
+                            <img src={ expertImage } />
+                            <h3>Experten-<br />Beratung</h3>
 
                             <ul>
                                 <li>
@@ -21,7 +26,7 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Online-Beratung bei Problemen mit Krypto-Steuer-Tools (z. B. CoinTracking, Blockpit)</span>
+                                    <span>Persönliche Online-Beratung bei Krypto-Steuerfragen</span>
                                 </li>
 
                                 <li>
@@ -31,12 +36,23 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Unterstützung bei Nachweisen zur Krypto-Mittelherkunft</span>
+                                    <span>Hilfe bei CoinTracking, Blockpit & Co.</span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24">
+                                            <path d="M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z"></path>
+                                        </svg>
+                                    </span>
+
+                                    <span>Unterstützung bei Nachweisen zur Herkunft deiner Coins (z.B. für Banken oder Steuerberater)</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div>
+                            <img src={ diskImage } alt="" />
                             <h3>Krypto-Datenaufbereitung</h3>
 
                             <ul>
@@ -47,7 +63,7 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Fachgerechte Aufbereitung deiner Krypto-Transaktionen im passenden Steuer-Tool</span>
+                                    <span>Fachgerechte Aufarbeitung aller Transaktionen - egal wie komplex</span>
                                 </li>
 
                                 <li>
@@ -57,12 +73,23 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Automatisierte und manuelle Erfassung komplexer Transaktionen (z. B. Staking, Lending)</span>
+                                    <span>Automatisiert & manuell geprüft (z.B. Staking, NFTs, Lending, DeFi)</span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24">
+                                            <path d="M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z"></path>
+                                        </svg>
+                                    </span>
+
+                                    <span>Direkte Übernahme in dein Steuer-Tool (z.B. CoinTracking)</span>
                                 </li>
                             </ul>
                         </div>
                         
                         <div>
+                            <img src={ stocksImage } alt="" />
                             <h3>Optimale Steuerlösung</h3>
                             
                             <ul>
@@ -73,7 +100,7 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Steuerersparnis durch korrekt aufbereitete Daten</span>
+                                    <span>Maximale Ersparnis durch korrekt aufbereitete Daten</span>
                                 </li>
 
                                 <li>
@@ -85,11 +112,22 @@ function Benefit() {
 
                                     <span>DSGVO-konformer Service mit Standort in der EU</span>
                                 </li>
+
+                                <li>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24">
+                                            <path d="M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z"></path>
+                                        </svg>
+                                    </span>
+
+                                    <span>Ideal für Hodler, Daytrader & DeFi-Nutzer</span>
+                                </li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3>Rundum-Sorglos-Service</h3>
+                            <img src={ carefreeImage } alt="" />
+                            <h3>Rundum-Service</h3>
 
                             <ul>
                                 <li>
@@ -99,7 +137,7 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Kein Stress mit Wallets, DeFi & NFTs - wir übernehmen alles</span>
+                                    <span>Kein Stress mit Wallets, Tools & Formularen - wir kümmern uns drum</span>
                                 </li>
 
                                 <li>
@@ -109,7 +147,17 @@ function Benefit() {
                                         </svg>
                                     </span>
 
-                                    <span>Kein Vorwissen nötig - für Anfänger & Profis</span>
+                                    <span>Kein Vorwissen nötig - perfekt für Einsteiger & Profis</span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 24 24">
+                                            <path d="M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.514 6.486 22 12 22 C 17.514 22 22 17.514 22 12 C 22 10.874 21.803984 9.7942031 21.458984 8.7832031 L 19.839844 10.402344 C 19.944844 10.918344 20 11.453 20 12 C 20 16.411 16.411 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 13.633 4 15.151922 4.4938906 16.419922 5.3378906 L 17.851562 3.90625 C 16.203562 2.71225 14.185 2 12 2 z M 21.292969 3.2929688 L 11 13.585938 L 7.7070312 10.292969 L 6.2929688 11.707031 L 11 16.414062 L 22.707031 4.7070312 L 21.292969 3.2929688 z"></path>
+                                        </svg>
+                                    </span>
+
+                                    <span>Transparenter Ablauf: Du weißt immer, was als Nächstes passiert</span>
                                 </li>
                             </ul>
                         </div>

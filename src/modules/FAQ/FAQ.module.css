@@ -31,6 +31,8 @@
 
 .faq-container-content-card {
   border-bottom: 1px solid #eee;
+  overflow: hidden;
+  transition: all 0.35s ease;
 }
 
 .faq-container-content-card:last-child {
@@ -79,16 +81,15 @@
 }
 
 .faq-container-content-card div {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   padding: 0 20px;
   color: #6f8ba4;
   font-size: 0.95rem;
   line-height: 1.5;
-  transition: max-height 0.35s ease, padding 0.35s ease;
+  transition: height 0.35s ease, padding 0.35s ease;
 }
 
 .faq-container-content-card[open] div {
-  max-height: 500px;
   padding: 15px 20px 25px;
 }

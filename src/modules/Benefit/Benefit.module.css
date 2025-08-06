@@ -1,5 +1,5 @@
 .benefit {
-    height: 330px;
+    height: 530px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .benefit-container-title {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     padding: 0 10px;
     font-size: 18pt;
     font-weight: 500;
@@ -33,7 +33,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
     margin: 0 auto;
 }
 
@@ -44,20 +43,30 @@
 }
 
 .benefit-container-bulletpoints-collection div {
-    height: 220px;
-    width: 330px;
-    margin: 10px;
+    height: 450px;
+    width: 230px;
     background-color: #fff;
-    border: 2px solid var(--light-green);
-    box-shadow: 0 0 6px 1px var(--light-green);
-    border-radius: 20px;
+    box-shadow: 0 0 6px 1px rgb(224, 224, 224);
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+}
+
+.benefit-container-bulletpoints-collection div img {
+    width: 80px;
+    display: block;
+    margin: 30px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .benefit-container-bulletpoints-collection div h3 {
-    padding: 20px 10px 10px 10px;
     font-weight: 700;
     font-size: 16pt;
-    height: 75px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 150px;
 }
 
 .benefit-container-bulletpoints-collection div ul {
@@ -65,24 +74,43 @@
 }
 
 .benefit-container-bulletpoints-collection div ul li {
-    height: 70px;
+    padding: 5px 0;
     display: flex;
     align-items: center;
-    padding: 0 5px;
 }
 
 .benefit-container-bulletpoints-collection div ul li span:nth-child(1) {
     padding: 10px;
 }
 
-@media screen and (min-width: 714px) and (max-width: 1414px) {
+@media screen and (max-width: 1014px) {
     .benefit {
-        height: 580px;
+        height: 965px;
+    }
+
+    .benefit-container-bulletpoints-collection div:nth-child(4) {
+        height: 410px;
     }
 }
 
-@media screen and (max-width: 714px) {
+@media screen and (max-width: 764px) {
     .benefit {
-        height: 1060px;
+        height: 965px;
+    }
+
+    .benefit-container-bulletpoints-collection div:nth-child(3),
+    .benefit-container-bulletpoints-collection div:nth-child(4) {
+        height: 410px;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .benefit {
+        height: 1865px;
+    }
+
+    .benefit-container-bulletpoints-collection div:nth-child(3),
+    .benefit-container-bulletpoints-collection div:nth-child(4) {
+        height: 410px;
     }
 }

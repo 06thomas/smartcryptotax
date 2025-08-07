@@ -55,6 +55,7 @@
     height: 40px;
     flex-direction: column;
     gap: 10px 10px;
+    text-align: center;
 }
 
 .footer-container-content-links a {

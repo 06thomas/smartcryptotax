@@ -10,11 +10,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    
-    word-break: normal !important;
-    overflow-wrap: normal !important;
-    white-space: normal !important;
-    hyphens: manual !important;
 }
 
 img {
@@ -23,6 +18,7 @@ img {
 
 body {
     width: 100%;
+    max-width: 100% !important;
     min-width: 320px;
     font-family: "Inter";
     background-color: #fefaf9;

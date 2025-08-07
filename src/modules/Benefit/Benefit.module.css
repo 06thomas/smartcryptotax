@@ -50,6 +50,7 @@
     border-radius: 5px;
     margin: 10px;
     position: relative;
+    padding: 0 2px;
 }
 
 .benefit-container-bulletpoints-collection div img {
